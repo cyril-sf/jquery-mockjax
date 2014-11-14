@@ -9,7 +9,7 @@
  *
  * Copyright (c) 2014 appendTo, Jordan Kasper
  * NOTE: This repository was taken over by Jordan Kasper (@jakerella) October, 2014
- * 
+ *
  * Dual licensed under the MIT or GPL licenses.
  * http://opensource.org/licenses/MIT OR http://www.gnu.org/licenses/gpl-2.0.html
  */
@@ -485,7 +485,7 @@
 
 		// Iterate over our mock handlers (in registration order) until we find
 		// one that is willing to intercept the request
-		for(var k = 0; k < mockHandlers.length; k++) {
+		for(var k = mockHandlers.length-1; k >= 0; k--) {
 			if ( !mockHandlers[k] ) {
 				continue;
 			}
